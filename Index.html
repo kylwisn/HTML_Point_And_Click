@@ -1,0 +1,69 @@
+<html>
+    <!DOCTYPE html>
+	<head>
+        <!-- No crawl -->
+        <meta name="robots" content="noindex">
+        
+        <title>
+			Escape Room
+		</title>
+		<link href="/css/style.css" rel="stylesheet">
+		<!-- <link rel="icon" type="image/jpb" href="/images/favicon.jpg"> -->
+        <script src="js/javascript.js"></script>
+
+	</head>
+
+
+	<body class="terminal">
+        <!-- Body Section Start -->
+        
+        <audio src="/sound/lockedDoor.wav" id="doorLocked"></audio>
+        <audio src="/sound/doorOpen.wav" id="doorOpen"></audio>       
+        
+        
+        <div id="room"> 
+            
+            
+            <!-- Front Door -->
+            <img id="frontDoor" src="/img/roomFront_DoorClosed.png" alt="frontDoor" usemap="#frontDoor" style="position:absolute;">          
+
+            <!-- Metal Drawer -->
+            <img id="metalDrawer" src="/img/roomFront_MetalDrawerClosed.png" alt="fileCabinet" usemap="#roomFront" style="position:absolute;">
+
+            
+            <!-- Pinpad -->
+            <img id="pinPad" src="/img/roomFront_keypad.png" alt="keyPad" usemap="#roomFront" style="position:absolute;">
+
+
+
+            <!-- Background Image Plate -->
+            <img id="roomDefault" src="/img/roomFront_background.png" alt="roomFront" usemap="#roomFront">
+
+
+
+
+            <!-- Clickable areas on the page-->
+            <map name="roomFront">
+
+                <area shape="rect" coords="661,187,863,629" alt="frontDoor" onclick="checkIfUnlocked()" href="#" >
+
+                <area shape="rect" coords="894,324,920,350" alt="keyPad" href="/pinpad.html">
+
+                <area shape="poly" coords="84,694,136,671,290,691,288,763,241,802,83,772" alt="fileCabinet" href="/filecabinet.html">
+
+            </map>
+
+
+
+
+        </div>
+
+
+
+
+        <!-- Body Section End -->
+	</body>
+
+
+
+</html>

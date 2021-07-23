@@ -1,0 +1,66 @@
+<html>
+    <!DOCTYPE html>
+	<head>
+        <!-- No crawl -->
+        <meta name="robots" content="noindex">
+        
+        <title>
+			Escape Room
+		</title>
+		<link href="/css/style.css" rel="stylesheet">
+		<!-- <link rel="icon" type="image/jpb" href="/images/favicon.jpg"> -->
+        <script src="js/javascript.js"></script>
+
+	</head>
+
+
+	<body class="terminal">
+        <audio src="/sound/pinPadButton.wav" id="buttonPush"></audio>
+        <audio src="/sound/deadboltunlock.wav" id="deadBoltUnlock"></audio>
+        <audio src="/sound/codeFail.wav" id="codeFail"></audio>
+
+
+
+        <!-- Body Section Start -->
+        <div id="pinPad"> 
+            <img id="numPadDefault" src="/img/numberpad_default.jpg" alt="pinpad" usemap="#pinpad" width="808" height="815">
+
+
+
+
+            <map name="pinpad">
+                <area shape="circle" coords="143,98,78" alt="numOne" id="1" onclick="numPadOne()" href="#">
+
+                <area shape="circle" coords="410,91,78" alt="numTwo" id="2" onclick="numPadTwo()" href="#">
+
+                <area shape="circle" coords="677,94,78" alt="numThree" id="3" onclick="numPadThree()" href="#">
+
+                <area shape="circle" coords="136,362,78" alt="numFour" id="4" onclick="numPadFour()" href="#">
+
+                <area shape="circle" coords="404,359,78" alt="numFive" id="5" onclick="numPadFive()" href="#">
+
+                <area shape="circle" coords="679,366,78" alt="numSix" id="6" onclick="numPadSix()" href="#">
+
+                <area shape="circle" coords="129,644,78" alt="numSeven" id="7" onclick="numPadSeven()" href="#">
+
+                <area shape="circle" coords="402,642,78" alt="numEight" id="8" onclick="numPadEight()" href="#">
+
+                <area shape="circle" coords="678,643,78" alt="numNine" id="9" onclick="numPadNine()" href="#">
+
+                <area shape="circle" coords="545,759,36" alt="numNine" id="enter" onclick="numPadPuzzle()" href="#">
+
+            </map>
+
+            <br/>
+
+            <button class="buttonGoBack" onclick="location.href='/Index.html';">Go Back</button>
+
+        </div>
+
+
+        <!-- Body Section End -->
+	</body>
+
+
+
+</html>
